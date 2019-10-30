@@ -28,7 +28,7 @@ twitter_username: goandconquer1
 github_username:  goandconquer
 
 # Build settings
-remote_theme: hugoferreira/papyrus-theme
+theme: minima
 plugins:
   - jekyll-feed
 
