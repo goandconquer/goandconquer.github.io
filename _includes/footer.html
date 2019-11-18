@@ -1,36 +1,57 @@
-<footer class="site-footer">
-  <ul class="fa-ul">
-    {% if site.github_username %}
-      <li>
-        <a href="https://github.com/{{ site.github_username }}" target="_blank">
-          <i class="fa fa-github-square" aria-hidden="true"></i>
-        </a>
-      </li>
+<footer>
+  <div class="container">
+    <div class="row biography">
+      <div class="col-sm-4">
+        <h2>who am i</h2>
+        <p>{{ site.biography }}</p>
+      </div>
+      <div class="col-sm-4">
+        <h2>what is this</h2>
+        <p>{{ site.description }}</p>
+      </div>
+      <div class="col-sm-4">
+        <h2>where am i</h2>
+          {% if site.email %}
+          <div>
+            <a href="mailto:{{ site.email }}">
+              <span class="username">{{ site.email }}</span>
+            </a>
+          </div>
+          {% endif %}
+          {% if site.github_username %}
+          <div>
+            <a href="https://github.com/{{ site.github_username }}">
+              <span class="username">github//{{ site.github_username }}</span>
+            </a>
+          </div>
+          {% endif %}
+          {% if site.twitter_username %}
+          <div>
+            <a href="https://twitter.com/{{ site.twitter_username }}">
+              <span class="username">twitter//{{ site.twitter_username }}</span>
+            </a>
+          </div>
+          {% endif %}
+          {% if site.linkedin_username %}
+          <div>
+            <a href="https://id.linkedin.com/in/{{ site.linkedin_username }}">
+              <span class="username">linkedin//{{ site.linkedin_username }}</span>
+            </a>
+          </div>
+          {% endif %}
+          {% if site.facebook_username %}
+          <div>
+            <a href="https://www.facebook.com/{{ site.facebook_username }}">
+              <span class="username">facebook//{{ site.facebook_username }}</span>
+            </a>
+          </div>
+          {% endif %}
+      </div>
+    </div>
+    {% if site.colophon %}
+    <div class="row copyright">
+      <center>{{ site.colophon }}</center>
+    </div>
     {% endif %}
-    {% if site.linkedin_username %}
-    <li>
-      <a href="https://linkedin.com/in/{{ site.linkedin_username }}" target="_blank">
-        <i class="fa fa-linkedin-square" aria-hidden="true"></i>
-      </a>
-    </li>
-    {% endif %}
-    {% if site.facebook_username %}
-      <li>
-        <a href="https://www.facebook.com/{{ site.facebook_username }}" target="_blank">
-          <i class="fa fa-facebook-square" aria-hidden="true"></i>
-         </a>
-      </li>
-    {% endif %}
-    <li>
-      <a href="http://eepurl.com/dgBLKn" target="_blank">
-        <i class="fa fa-envelope" aria-hidden="true"></i>
-       </a>
-    </li>
-    <li>
-        <a href="http://www.natalyakosenko.com/feed.xml" target="_blank">
-          <i class="fa fa-rss-square" aria-hidden="true"></i>
-         </a>
-    </li>
-  </ul>
-  <span class="site-footer-credits">Copyright © {{ site.time | date: '%Y' }} {{ site.author }}</span>
+  </div>
 </footer>
