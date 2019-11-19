@@ -1,18 +1,21 @@
 # Site settings
-title: "On Software Engineering, Mathematics<br>and Philosophy"
-author: "Hugo Sereno Ferreira"
-description: "This is a blog about software, some mathematics, and the occasional philosophy. Not necessarily in that order."
-keywords: "Software Engineering, Mathematics, Philosophy, Scala, Epistemology, Existentialism, Programming, Machine-Learning, Artificial Intelligence, Statistics, Probability, Puzzles"
-biography: "I am a Professor of Software Engineering at the <a href='http://www.fe.up.pt'>Faculty of Engineering</a>, University of Porto and Senior Researcher at <a href='https://www.inesctec.pt'>INESC TEC</a>. Here you can find my <a href='/assets/thesis.pdf'>PhD Thesis</a> and my <a href='/assets/cv.pdf'>Résumé</a>."
-colophon: "© MMXIII — MMXVI by Hugo Sereno Ferreira.<br>Content available under <a href='http://creativecommons.org/licenses/by-nc-sa/4.0/'>Creative Commons (BY-NC-SA)</a> unless otherwise noted.<br>This site is hosted at <a href='https://pages.github.com/'>Github Pages</a> and created with <a href='http://jekyllrb.com/'>Jekyll</a>."
+
+title: "Mustering the Mystifying Muses"
+
+author: "David Ray Goforth"
+
+description: "The colorful and misinformed diatribes of a computer-geek-turned-storyologist. Topics include programming, game development, creative writing, table-top RPGs and any other nerd-centric hobbies one might adopt. Stick around, you may get some free stuff!"
+
+biography: "I am a student at <a href='https://www.okbu.edu/'>Oklahoma Baptist University</a>, studying Computer Science and Creative Writing. I have an extensive background in theatre, I have authored a 91k sci-fi novel and am working on a second, and I have roughly 4 years of Dungeon Master experience. You can find my <a href='/assets/Resume.pdf'>Résumé</a>."
+
+colophon: "This website uses the <a href='https://github.com/hugoferreira/papyrus-theme'>Papyrus</a> theme by Hugo Sereno Ferreira.<br>Content available under <a href='http://creativecommons.org/licenses/by-nc-sa/4.0/'>Creative Commons (BY-NC-SA)</a> unless otherwise noted.<br>This site is hosted at <a href='https://pages.github.com/'>Github Pages</a> and created with <a href='http://jekyllrb.com/'>Jekyll</a>."
 
 baseurl: ""
-url: "http://hugosereno.eu"
+url: "https://goandconquer.github.io/"
 
-twitter_username: ferreira_hugo
-github_username: hugoferreira
-linkedin_username: hugoserenoferreira
-facebook_username: hugo.sereno.ferreira
+twitter_username: goandconquer1
+github_username: goandconquer
+linkedin_username: david-ray-goforth
 google-analytics: UA-69060-5
 
 simple_search: http://google.com/search
