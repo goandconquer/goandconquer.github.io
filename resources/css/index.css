@@ -1,0 +1,96 @@
+:root
+{
+    --header-background: #776f55;
+    --header-text: #ffffff;
+    --body-background: #f5f5db;
+    --body-background-complement: #C5BB9A;
+    --body-text: #404040;
+    --webpage-shadow: #454236;
+}
+
+.home
+{
+    min-height: calc(100vh - 80px);
+    text-align: center;
+    place-content: center;
+}
+
+.home > .main
+{
+    display: flex;
+    flex-direction: column;
+    place-content: center;
+    flex-grow: 1;
+    gap: 48px;
+}
+
+.home > .main > .artifacts {
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 10vw;
+    font-size: 128px;
+
+}
+
+.home > .quote {
+
+    width: fit-content;
+    margin: 32px auto;
+
+}
+
+@media screen and (max-width: 768px) {
+
+}
+
+/* TABLET */
+
+@media screen and (max-width: 768px) and (min-width: 425px) {
+
+    .home > .main > .artifacts {
+
+        font-size: 20vw;
+    
+    }
+    
+}
+
+/* MOBILE S, MOBILE M, MOBILE L */
+
+@media screen and (max-width: 426px) {
+
+    .home > .main {
+
+        gap: 8px
+
+    }
+
+    .home > .main > .title {
+        
+        font-size: 36px;
+
+    }
+
+    .home > .main > h2 {
+
+        font-size: 24px;
+
+    }
+
+    .home > .main > .artifacts {
+
+        justify-content: space-between;
+        font-size: 20vw;
+        gap: 0;
+    
+    }
+
+    .home > .quote {
+
+        margin: 16px 0;
+
+    }
+
+}

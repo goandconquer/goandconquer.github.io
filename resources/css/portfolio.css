@@ -1,0 +1,24 @@
+:root {
+
+    --header-background: #776f55;
+    --header-text: #ffffff;
+
+    --body-background: #f5f5db;
+    --body-background-complement: #C5BB9A;
+    --body-text: #404040;
+
+    --webpage-shadow: #454236;
+
+}
+
+.portfolio {
+
+    height: 100vh;
+
+}
+
+.portfolio  > .vertical {
+
+    box-shadow:  0px 0px 0px 0.25px var(--body-text);
+
+}

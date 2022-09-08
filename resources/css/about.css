@@ -1,0 +1,150 @@
+:root {
+
+    --header-background: #776f55;
+    --header-text: #ffffff;
+
+    --body-background: #f5f5db;
+    --body-background-complement: #C5BB9A;
+    --body-text: #404040;
+
+    --webpage-shadow: #454236;
+
+}
+
+.waves-up {
+
+    width: 100%;
+    margin-top: -128px;
+
+}
+
+.about {
+
+    background-color: var(--body-background-complement);
+    padding-top: 96px;
+    min-height: 100%;
+
+}
+
+.about > .main {
+
+    display: flex;
+    flex-direction: row;
+    gap: 4vw;
+
+}
+
+.about > .main > .left, .about > .main > .right {
+
+    display: flex;
+    flex-direction: column;
+    place-content: center;
+    flex-wrap: wrap;
+
+}
+
+.about > .main > .left > img {
+
+    width: 26vw;
+    border-radius: 50%;
+    border: 0.5px solid var(--webpage-shadow);
+    box-shadow: 0 0 8px 0 var(--webpage-shadow);
+
+}
+
+.about > .main > .right > p, .about > .main > .right > h2 {
+
+    font-size: 20px;
+
+}
+
+.about > .main > .right > .socials {
+
+    display: flex;
+    flex-direction: row;
+    padding: 16px 128px 16px 0px;
+    gap: 2.5vw;
+
+}
+
+.about > .main > .right > .socials > a {
+
+    font-size: 32px;
+    
+}
+
+@media screen and (max-width: 768px) {
+
+    .waves-up {
+
+        margin-top: 0;
+
+    }
+
+    .about {
+
+        padding-top: 64px;
+        padding-bottom: 64px;
+
+    }
+
+    .about > .main {
+
+        flex-direction: column-reverse;
+        text-align: center;
+        gap: 0px;
+        padding: 0;
+
+    }
+
+    .about > .main > .left {
+
+        align-items: center;
+
+    }
+    
+    .about > .main > .left > img {
+
+        width: 360px;
+        max-width: 50vw;
+        margin-top: 16px;
+    
+    }
+
+    .about > .main > .right > .socials {
+
+        justify-content: center;
+        padding: 16px 16px 16px 0;
+        gap: 32px;
+        flex-wrap: wrap;
+
+    }
+
+}
+
+@media screen and (max-width: 426px) {
+
+    .about {
+
+        padding-top: 32px;
+        padding-bottom: 32px;
+
+    }
+
+    .about > .main > .left > img {
+
+        max-width: 75vw;
+
+    }
+
+}
+
+@media screen and (max-width: 321px) {
+
+    .about > .main > .left > img {
+
+
+
+    }
+
+}
