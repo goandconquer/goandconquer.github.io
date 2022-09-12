@@ -8,65 +8,26 @@
     --webpage-shadow: #454236;
 }
 
-.projects > .vertical
-{
-    flex-shrink: 1;
-    box-shadow:  0px 0px 0px 0.25px var(--body-text);
+.cards {
+
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(256px, 1fr));
+    grid-column-gap: 32px;
+    grid-row-gap: 32px;
+    margin: 32px 0px;
+
 }
 
-.projects > .vertical { visibility: hidden; }
+.projects i {
 
-.projects > .main
-{
-    display: flex;
-    flex-direction: column;
-    gap: 16px;
+    font-size: 64px;
+
 }
 
-.projects > .main > .display
-{
-    display: flex;
-    flex-direction: column;
-    gap: 16px;
-}
+.card {
 
-.projects > .main > .display > .photo
-{
-    display: flex;
-    justify-content: center;
-}
-
-.projects > .main > .display > .photo > img
-{
-    border-radius: 50%;
-    border: 0.5px solid var(--webpage-shadow);
-    box-shadow: 0 0 8px 0 var(--webpage-shadow);
-}
-
-.projects > .main > .display > .content > ul > li
-{
-    font-size: 24px;
-}
-
-.projects > .main > .cards
-{
-    display: flex;
-    justify-content: center;
-    flex-direction: row;
-    flex-wrap: wrap;
-    gap: 16px;
-}
-
-.projects > .main > .cards > .card
-{
-    display: flex;
-}
-
-.projects > .main > .cards > .card > img
-{
-    width: 64px;
-    height: auto;
-    border-radius: 50%;
-    border: 0.5px solid var(--webpage-shadow);
-    box-shadow: 0 0 8px 0 var(--webpage-shadow);
+    text-align: center;
+    border: var(--body-text) dotted 0.25px;
+    padding: 32px 16px;
+    
 }
