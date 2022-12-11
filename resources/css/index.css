@@ -21,40 +21,6 @@
     flex-direction: column;
     place-content: center;
     flex-grow: 1;
-    gap: 48px;
-}
-
-.home > .main > .artifacts {
-
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    gap: 10vw;
-    font-size: 128px;
-
-}
-
-.home > .quote {
-
-    width: fit-content;
-    margin: 32px auto;
-
-}
-
-@media screen and (max-width: 768px) {
-
-}
-
-/* TABLET */
-
-@media screen and (max-width: 768px) and (min-width: 425px) {
-
-    .home > .main > .artifacts {
-
-        font-size: 20vw;
-    
-    }
-    
 }
 
 /* MOBILE S, MOBILE M, MOBILE L */
@@ -85,12 +51,6 @@
         font-size: 20vw;
         gap: 0;
     
-    }
-
-    .home > .quote {
-
-        margin: 16px 0;
-
     }
 
 }

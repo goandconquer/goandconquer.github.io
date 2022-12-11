@@ -1,0 +1,29 @@
+:root {
+
+    --papaya-whip: #FDF0D5;
+    --van-dyke-brown: #66462C;
+    --gold-crayon: #DCC48E;
+
+}
+
+header > nav {
+
+    background-color: var(--papaya-whip);
+
+    position: fixed;
+    display: table;
+    list-style: none;
+
+    width: 100vw;
+
+}
+
+header > nav > a {
+
+    text-align: center;
+    width: 20vw;
+    padding: 24px 0;
+    text-decoration: none;
+    color: var(--van-dyke-brown);
+
+}
