@@ -2,14 +2,39 @@
 
     --papaya-whip: #FDF0D5;
     --van-dyke-brown: #66462C;
+    --gold-crayon: #DCC48E;
+
+}
+
+.home {
+
+    position: relative;
 
 }
 
 .quote {
 
+    position: relative;
+
+    left: 50%;
+    transform: translate(-50%);
+
     background-color: var(--van-dyke-brown);
 
     width: fit-content;
-    margin: 32px auto;
+    padding: 32px;
+    color: white;
+
+    display: flex;
+    flex-direction: column;
+
+    outline: 4px solid var(--papaya-whip);
+    outline-offset: -16px;
+
+}
+
+.quote > a {
+
+    color: white;
 
 }

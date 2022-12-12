@@ -6,51 +6,51 @@
     --body-background-complement: #C5BB9A;
     --body-text: #404040;
     --webpage-shadow: #454236;
+
+    --papaya-whip: #FDF0D5;
+    --van-dyke-brown: #66462C;
+    --gold-crayon: #DCC48E;
+}
+
+@font-face {
+    font-family: "Scaremate";
+    src: url("../../assets/scaremate-font/misc/Scarematehy\ Free\ Trial-baa7.woff2") format("woff2"),
+         url("../../assets/scaremate-font/misc/Scarematehy\ Free\ Trial-a39a.woff") format("woff");
 }
 
 .home
 {
-    min-height: calc(100vh - 80px);
     text-align: center;
     place-content: center;
+    height: 100vh;
 }
 
-.home > .main
-{
-    display: flex;
-    flex-direction: column;
-    place-content: center;
-    flex-grow: 1;
-}
+.home > .title-container {
 
-/* MOBILE S, MOBILE M, MOBILE L */
-
-@media screen and (max-width: 426px) {
-
-    .home > .main {
-
-        gap: 8px
-
-    }
-
-    .home > .main > .title {
-        
-        font-size: 36px;
-
-    }
-
-    .home > .main > h2 {
-
-        font-size: 24px;
-
-    }
-
-    .home > .main > .artifacts {
-
-        justify-content: space-between;
-        font-size: 20vw;
-        gap: 0;
+    position: absolute;
+    background-color: var(--van-dyke-brown);
+    color: white;
+    padding: 32px;
+    left: 50%;
+    transform: translate(-50%);
+    border-radius: 50%;
     
-    }
+    width: 75vw;
+    height: 75vw;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    outline: 4px solid var(--papaya-whip);
+    outline-offset: -16px;
+
+}
+
+.home > .title-container > h1 {
+
+    margin: 0;
+    font-size: 2rem;
+    font-family: "Scaremate";
 
 }
