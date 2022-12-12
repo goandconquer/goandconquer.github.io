@@ -7,6 +7,10 @@
     --body-text: #404040;
     --webpage-shadow: #454236;
 
+    --papaya-whip: #FDF0D5;
+    --van-dyke-brown: #66462C;
+    --gold-crayon: #DCC48E;
+
 }
 
 @font-face {
@@ -24,17 +28,18 @@ html {
 
 body {
     font-family: 'Courier New', Courier, monospace;
-    background-color: var(--papaya-whip);
     color: var(--black-coffee);
     display: flex;
     flex-direction: column;
+    background-image: url("../../assets/img-noise-1920x1080-papaya-whip.png");
+
 }
 
 main {
 
     display: flex;
     flex-direction: column;
-    padding: 0 0 32px 0;
+    padding: 0 0 0 0;
     max-height: 100%;
     min-height: 100vh;
 
@@ -44,7 +49,7 @@ section {
 
     display: flex;
     flex-direction: column;
-    padding: 0 10vw;
+    padding: 16px;
     /* min-height: 100vh; */
     max-height: 100%;
 
@@ -104,31 +109,27 @@ a:hover {
 
 hr {
 
-    box-shadow:  0px 0px 0px 0.25px var(--body-text);
+    border-bottom: 4px solid var(--gold-crayon);
     width: 100%;
 
-}
-
-/* TABLET */
-
-@media screen and (max-width: 768px) and (min-width: 425px) {
-
-    section {
-
-        padding: 0 7vw 0 7vw;
-
-    }
+    margin-left: 0;
+    margin-right: 0;
+    padding-left: 0;
+    padding-right: 0;
 
 }
 
-/* MOBILE S, MOBILE M, MOBILE L */
+/* ------------------- */
 
-@media screen and (max-width: 425px) {
+.van-dyke-noise {
 
-    section {
+    background-image: url("../../assets/img-noise-1920x1080-van-dyke.png");
 
-        padding: 16px;
+}
 
-    }
+.inner-outline {
+
+    outline: 4px solid var(--papaya-whip);
+    outline-offset: -16px;
 
 }

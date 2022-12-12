@@ -6,18 +6,38 @@
 
 }
 
-.home {
+.quote {
 
+    display: flex;
+    place-items: center;
     position: relative;
+
+    padding-top: 0;
+    padding-bottom: 0;
 
 }
 
-.quote {
+.quote > .quote-rebar {
 
-    position: relative;
+    position: absolute;
+    border-bottom: 16px solid var(--van-dyke-brown);
+    z-index: 0;
+
+    padding: 0;
+    margin: 0;
 
     left: 50%;
-    transform: translate(-50%);
+    top: 50%;
+    transform: translate(-50%, -50%);
+
+    outline: 4px solid var(--papaya-whip);
+    outline-offset: -8px;
+
+}
+
+.quote > .quote-box {
+
+    position: relative;
 
     background-color: var(--van-dyke-brown);
 
@@ -28,12 +48,9 @@
     display: flex;
     flex-direction: column;
 
-    outline: 4px solid var(--papaya-whip);
-    outline-offset: -16px;
-
 }
 
-.quote > a {
+.quote > .quote-box > a {
 
     color: white;
 
