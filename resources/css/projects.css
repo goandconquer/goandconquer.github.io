@@ -8,6 +8,12 @@
     --webpage-shadow: #454236;
 }
 
+.projects > h1 {
+
+    font-size: clamp(2rem, 0.4762rem + 7.619vw, 2.5rem);
+    
+}
+
 .cards {
 
     display: grid;

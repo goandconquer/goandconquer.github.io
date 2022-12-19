@@ -1,18 +1,13 @@
 :root
 {
-    --header-background: #776f55;
-    --header-text: #ffffff;
-    --body-background: #f5f5db;
-    --body-background-complement: #C5BB9A;
-    --body-text: #404040;
     --webpage-shadow: #454236;
-
     --papaya-whip: #FDF0D5;
     --van-dyke-brown: #66462C;
     --gold-crayon: #DCC48E;
 }
 
-@font-face {
+@font-face
+{
     font-family: "Scaremate";
     src: url("../../assets/scaremate-font/misc/Scarematehy\ Free\ Trial-baa7.woff2") format("woff2"),
          url("../../assets/scaremate-font/misc/Scarematehy\ Free\ Trial-a39a.woff") format("woff");
@@ -23,48 +18,40 @@
     display: flex;
     flex-direction: column;
     text-align: center;
-    place-content: center;
-    height: 100%;
-    gap: 50vw;
-    margin-top: 64px;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    max-height: 100%;
+    padding-top: 84px;
 }
 
-.home > .home-image-code, .home > .home-image-notebook {
-
-    width: 100%;
-    height: 100%;
-
-}
-
-.home > .home-image-code > img, .home > .home-image-notebook > img {
-
-    width: 100%;
-    display: block;
-
-}
-
-.home > .title-container {
-
-    position: absolute;
+.home > .title-container
+{
     color: white;
     padding: 16px;
-    left: 50%;
-    transform: translate(-50%);
-    border-radius: 50%;
-    
-    width: 75vw;
-    height: 75vw;
-
+    border-radius: 50%;   
+    width: 95vw;
+    max-width: 403.75px;
+    height: 95vw;
+    max-height: 403.75px;
     display: flex;
-    justify-content: center;
-    align-items: center;
-
+    place-items: center;
 }
 
-.home > .title-container > h1 {
-
-    margin: 0;
-    font-size: 2rem;
+.home > .title-container > h1
+{
+    font-size: clamp(2rem, 0.4762rem + 7.619vw, 2.5rem);
     font-family: "Scaremate";
+}
 
+.home > .quote
+{
+    padding: 32px;
+}
+
+.home > .quote > .quote-box
+{
+    font-size: 1.5rem;
+    display: flex;
+    flex-direction: column;
 }
