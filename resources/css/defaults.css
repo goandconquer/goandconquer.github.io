@@ -125,6 +125,11 @@ hr {
 
 }
 
+img
+{
+    display: block;
+}
+
 /* ------------------- */
 
 .van-dyke-noise {

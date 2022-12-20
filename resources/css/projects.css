@@ -1,39 +1,33 @@
 :root
 {
-    --header-background: #776f55;
-    --header-text: #ffffff;
-    --body-background: #f5f5db;
-    --body-background-complement: #C5BB9A;
-    --body-text: #404040;
     --webpage-shadow: #454236;
+    --papaya-whip: #FDF0D5;
+    --van-dyke-brown: #66462C;
+    --gold-crayon: #DCC48E;
 }
 
-.projects > h1 {
-
-    font-size: clamp(2rem, 0.4762rem + 7.619vw, 2.5rem);
-    
+.projects > h1
+{
+    font-size: clamp(2rem, 0.4762rem + 7.619vw, 2.5rem);   
 }
 
-.cards {
-
+.cards
+{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(256px, 1fr));
     grid-column-gap: 32px;
     grid-row-gap: 32px;
     margin: 32px 0px;
-
 }
 
-.projects i {
-
+.projects > .cards > .card >  i
+{
     font-size: 64px;
-
 }
 
-.card {
-
+.card
+{
     text-align: center;
     border: var(--body-text) dotted 0.25px;
-    padding: 32px 16px;
-    
+    padding: 32px 16px;   
 }
