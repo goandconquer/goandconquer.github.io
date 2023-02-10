@@ -1,24 +1,53 @@
 :root {
 
-    --header-background: #776f55;
-    --header-text: #ffffff;
-
-    --body-background: #f5f5db;
-    --body-background-complement: #C5BB9A;
-    --body-text: #404040;
-
     --webpage-shadow: #454236;
+    --papaya-whip: #FDF0D5;
+    --van-dyke-brown: #66462C;
+    --gold-crayon: #DCC48E;
 
 }
 
 .portfolio {
 
-    height: 100vh;
+    min-height: 100vh;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    gap: 32px;
 
 }
 
-.portfolio  > .vertical {
+.portfolio > .directory
+{
+    display: flex;
+    flex-direction: column;
+    background-image: url("../../assets/img-noise-1920x1080-van-dyke.png");
+    padding: 32px;
+    color: whitesmoke;
+}
 
-    box-shadow:  0px 0px 0px 0.25px var(--body-text);
+.portfolio > .directory > a
+{
+    color: whitesmoke;
+}
+
+.portfolio > .directory > a:hover
+{
+    color: var(--gold-crayon);
+}
+
+.portfolio > div {
+
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    flex-shrink: 1;
+
+}
+
+.portfolio > div > .books > img {
+
+    width: 300px;
+    height: 500px;
 
 }
